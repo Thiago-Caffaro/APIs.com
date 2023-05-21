@@ -1,20 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hide{
+    display: none;
+}
+.hideVis{
+    visibility: hidden;
+}
+.view{
+    display: block;
+}
+
+
 body{
     text-align: center;
 }
-header{
-    margin-top: 20vh;
+header>h1{
     font-size: 100px;
-    display: flexbox;
 }
+
 #menor{
-    font-size: 87px;
+    font-size: 85px;
 }
+
+#apiInfo{
+    margin-top: 30px;
+    display: inline-block;
+}
+#infoBtn{
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: #000000 solid 1px;
+    border-radius: 15px;
+}
+#infoBtn:hover + p{
+    display: inline-block;
+}
+#upper{
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 0;
+}
+#down{
+    transform: translateY(110%);
+    transition: transform 0.5s ease;
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
 #descricao-header{
     width: 610px;
     margin: auto;
     margin-top: 30px;
+    padding: 10px;
     font-size: 28px;
+    background-color: white;
     border: black solid 5px;
+
+    position: relative;
+    z-index: 2;
 }
 #seta{
     width: 0;
@@ -40,7 +87,7 @@ main{
 }
 .API{
     width: 400px;
-    height: 400px;
+    min-height: 400px;
     margin: auto;
     border: #000000 solid 5px;
 }

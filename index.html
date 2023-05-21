@@ -7,13 +7,28 @@
     <title>APIs.com</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/pag1.css">
+    <link rel="stylesheet" href="css/typing.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
-
     <header>
-        <h1>API<span id="menor">s.com</span></h1>
-        <p id="descricao-header">Descubra uma grande quantia <br>de APIs interessantes e<br> únicas!</p>
+        <div id="apiInfo">
+            <p id="text" class="hideVis">O que é uma API?</p>
+            <br>
+            <button id="infoBtn">i</button>
+        </div>
+        <h1 id="upper" class="typing">API<span id="menor">s.com</span></h1>
+        <div id="descricao-header">
+            <p id="txt1">Descubra uma grande quantia <br>de APIs interessantes e<br> únicas!</p>  
+            <p id="txt2" class="hide">
+                Uma API é como um manual de instruções que permite que diferentes programas 
+                se comuniquem e trabalhem juntos de forma fácil. É como uma "ponte" que permite que um aplicativo 
+                use as funções de outro aplicativo ou serviço sem precisar conhecer todos os detalhes internos. É 
+                como quando você usa um controle remoto para ligar a TV - você pressiona um botão e a TV responde, 
+                mas você não precisa saber como ela funciona por dentro. A API faz isso, facilitando a interação 
+                entre os programas.
+            </p>
+        </div>
     </header>
     <a href="#APIs">
         <div id="seta" data-aos="fade"></div>
@@ -39,12 +54,19 @@
             </a>
         </div>
         <div class="API" data-aos="fade-up">
-            <a href="#">
-                <h1 class="titulos-api">PlaceHolder API</h1>
-                <p class="descricao-bloco">Futuras APIs serão colocadas aqui!</p>
+            <a href="paginas/randomUsrGenAPI/index.html">
+                <h1 class="titulos-api">Random user generator API</h1>
+                <p class="descricao-bloco">Está cansado de preencher dados aleatórios como nomes, emails, numeros de telefone, etc?<br>Esta API irá retornar milhares deles para você.</p>
+            </a>
+        </div>
+        <div class="API" data-aos="fade-up">
+            <a href="paginas/memeApi/index.html">
+                <h1 class="titulos-api">Meme API</h1>
+                <p class="descricao-bloco">Nesta API você pode tornar qualquer imagem um meme colocando um texto superior e inferior!</p>
             </a>
         </div>
     </main>
+    <script src="js/global.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
